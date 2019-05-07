@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#424242" />
-        <title>Smart Hospital : Hospital Management System</title>
+        <title>Clinica Administracion</title>
         <!--favican-->
         <link href="<?php echo base_url(); ?>backend/images/s-favican.png" rel="shortcut icon" type="image/x-icon">
         <!-- CSS -->
@@ -71,10 +71,10 @@
                         }
                         ?>
                         <div class="col-lg-5 col-sm-5 form-box <?php echo $offset; ?>">
-                            <div class="loginbg">  
+                            <div class="loginbg">
                                 <div class="form-top">
                                     <div class="form-top-left">
-                                        <img src="<?php echo base_url(); ?>backend/images/s_logo.png" style="height: 30px;">    
+                                        <img src="<?php echo base_url(); ?>backend/images/s_logo.png" style="height: 30px;">
                                     </div>
                                     <div class="form-top-right">
                                         <i class="fa fa-key"></i>
@@ -96,18 +96,18 @@
 
                                     <form action="<?php echo site_url('site/login') ?>" method="post">
                                         <?php echo $this->customlib->getCSRF(); ?>
-                                        <div class="form-group">                                            
+                                        <div class="form-group">
                                             <input type="text" name="username" placeholder="<?php echo $this->lang->line('username'); ?>" value="" class="form-username form-control" id="email">
                                             <span class="text-danger"><?php echo form_error('username'); ?></span>
                                         </div>
-                                        <div class="form-group">                                           
+                                        <div class="form-group">
                                             <input type="password" value="" name="password" placeholder="<?php echo $this->lang->line('password'); ?>" class="form-password form-control" id="password">
                                             <span class="text-danger"><?php echo form_error('password'); ?></span>
                                         </div>
                                         <button type="submit" class="btn"><?php echo $this->lang->line('sign_in'); ?></button>
                                     </form>
 									<br>
-                                    <p><a href="<?php echo site_url('site/forgotpassword') ?>" class="forgot"><i class="fa fa-key"></i> <?php echo $this->lang->line('forgot_password'); ?>?</a> </p> 
+                                    <p><a href="<?php echo site_url('site/forgotpassword') ?>" class="forgot"><i class="fa fa-key"></i> <?php echo $this->lang->line('forgot_password'); ?>?</a> </p>
 
                                 </div>
                             </div>
@@ -115,10 +115,10 @@
                         <?php
                         if (!$empty_notice) {
                             ?>
-                            <div class="col-lg-1 col-sm-1"><div class="separatline"></div></div> 
+                            <div class="col-lg-1 col-sm-1"><div class="separatline"></div></div>
                             <div class="col-lg-6 col-sm-6 col-sm-6">
                                 <div class="loginright form-box  mCustomScrollbar">
-                                    <div class="messages"> 
+                                    <div class="messages">
 
                                         <h3><?php echo $this->lang->line('what_is_new_in'); ?> <?php echo $school['name']; ?></h3>
                                         <?php
@@ -151,7 +151,7 @@
 
 
 
-                                    </div>  
+                                    </div>
                                 </div>
                                     <!-- <img src="<?php echo base_url(); ?>backend/usertemplate/assets/img/backgrounds/bg3.jpg" class="img-responsive" style="border-radius:4px;" /> -->
                             </div><!--./col-lg-6-->

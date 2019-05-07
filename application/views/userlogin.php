@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#424242" />
-        <title>Smart Hospital : Hospital Management System</title>
+        <title>Clinica administracion</title>
         <link href="<?php echo base_url(); ?>backend/images/s-favican.png" rel="shortcut icon" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="<?php echo base_url(); ?>backend/usertemplate/assets/bootstrap/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>backend/usertemplate/assets/css/style.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>backend/usertemplate/assets/css/jquery.mCustomScrollbar.min.css">
         <style type="text/css">
-            .width100, .width50{font-size: 12px !important;}  
+            .width100, .width50{font-size: 12px !important;}
             .discover{margin-top: -90px;position: relative;z-index: -1;}
             /*.form-bottom {box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);}*/
             .gradient{margin-top: 40px;text-align: right;padding: 10px;background: rgb(72,72,72);
@@ -31,7 +31,7 @@
                       background-color: initial;
                       background: -webkit-linear-gradient(left, rgba(72,72,72,1) 1%,rgb(73, 73, 73) 44%,rgba(73,73,73,1) 100%);
                       background: linear-gradient(to right, rgba(72, 72, 72, 0.02) 1%,rgba(37, 37, 37, 0.67) 30%,rgba(73, 73, 73, 0) 100%);
-                      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#484848', endColorstr='#494949',GradientType=1 );}        
+                      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#484848', endColorstr='#494949',GradientType=1 );}
             @media (min-width: 320px) and (max-width: 991px){
                 .width100{width: 100% !important;display: block !important;
                           float: left !important; margin-bottom: 5px !important;
@@ -57,12 +57,12 @@
             @media(max-width:767px){
                 .discover{margin-top: 10px}
                 .gradient {text-align: center;}
-                .logowidth{padding-right:0px;}     
-            }  
+                .logowidth{padding-right:0px;}
+            }
             @media(min-width:768px) and (max-width:992px){
                 .discover{margin-top: 10px}
-                .logowidth{padding-right:0px;} 
-                .gradient {text-align: center;}  
+                .logowidth{padding-right:0px;}
+                .gradient {text-align: center;}
             }
 
             .backstretch{position: relative;}
@@ -178,24 +178,24 @@
                                                 <?php echo $this->lang->line('username'); ?></label>
                                             <input type="text" name="username" placeholder="<?php echo $this->lang->line('username'); ?>" class="form-username form-control" id="email"> <span class="text-danger"><?php echo form_error('username'); ?></span>
                                         </div>
-                                        <div class="form-group">                                        
+                                        <div class="form-group">
                                             <input type="password" name="password" placeholder="<?php echo $this->lang->line('password'); ?>" class="form-password form-control" id="password"> <span class="text-danger"><?php echo form_error('password'); ?></span>
                                         </div>
                                         <button type="submit" class="btn">
                                             <?php echo $this->lang->line('sign_in'); ?></button>
                                     </form>
 									<br>
-                                    <p><a href="<?php echo site_url('site/ufpassword') ?>"  class="forgot"> <i class="fa fa-key"></i> <?php echo $this->lang->line('forgot_password'); ?></a> </p> 
+                                    <p><a href="<?php echo site_url('site/ufpassword') ?>"  class="forgot"> <i class="fa fa-key"></i> <?php echo $this->lang->line('forgot_password'); ?></a> </p>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                         <?php
                         if (!$empty_notice) {
                             ?>
-                            <div class="col-lg-1 col-sm-1"><div class="separatline"></div></div> 
+                            <div class="col-lg-1 col-sm-1"><div class="separatline"></div></div>
                             <div class="col-lg-6 col-sm-6 col-sm-6">
                                 <div class="loginright form-box  mCustomScrollbar">
-                                    <div class="messages">    
+                                    <div class="messages">
                                         <h3><?php echo $this->lang->line('what_is_new_in'); ?> <?php echo $school['name']; ?></h3>
                                         <?php
                                         foreach ($notice as $notice_key => $notice_value) {
@@ -225,7 +225,7 @@
 
 
 
-                                    </div>  
+                                    </div>
                                 </div>
                             </div><!--./col-lg-6-->
                             <?php
